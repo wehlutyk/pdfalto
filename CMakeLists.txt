@@ -30,7 +30,7 @@ set(SOURCE_FILES
 
 add_executable(pdfalto ${SOURCE_FILES})
 
-target_link_libraries(pdfalto png zlib xml2 xpdf goo fofi ${XPDF_BUILD_DIR}/xpdf/lib/libxpdf.a)
+target_link_libraries(pdfalto png zlib xml2 xpdf goo fofi ${XPDF_BUILD_DIR}/xpdf/lib/libxpdf.a ${HAVE_PAPER_H})
 target_include_directories(pdfalto
         PUBLIC /usr/include/libxml2
         PUBLIC image/png
